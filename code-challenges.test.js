@@ -72,7 +72,7 @@ const codedMsg = (str) => str.split("").map(value=>{
 
 // a) Create a test with expects statement using the variable provided.
 
-describe("codedMsg",() => {
+describe("matchLetter",() => {
 
     it("takes in a string and returns a coded message.", () => {
 
@@ -83,9 +83,9 @@ describe("codedMsg",() => {
         const letterE = "e"
         // Expected output: ["Cherry", "Blueberry", "Peach"]
 
-      expect(matchLetter(fruitArray,letterA)).toEqual(["Mango", "Apricot", "Peach"])
-      expect(matchLetter(fruitArray,letterE)).toEqual(["Cherry", "Blueberry", "Peach"])
-      expect(matchLetter(fruitArray,9)).toEqual("9 is not a letter")
+        expect(matchLetter(fruitArray,letterA)).toEqual(["Mango", "Apricot", "Peach"])
+        expect(matchLetter(fruitArray,letterE)).toEqual(["Cherry", "Blueberry", "Peach"])
+        expect(matchLetter(fruitArray,9)).toEqual("9 is not a letter")
         })
     })
 
@@ -124,7 +124,7 @@ const matchLetter = (arr,letter) =>{
 // --------------------3) Create a function that takes in an array of 5 numbers and determines whether or not the array is a “full house”. A full house is exactly one pair and one three of a kind.
 
 // a) Create a test with expect statements using the variable provided.
-describe("codedMsg",() => {
+describe("fullHouse",() => {
 
     it("takes in a string and returns a coded message.", () => {
 
